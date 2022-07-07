@@ -1,0 +1,13 @@
+name: main
+on: push
+env:
+  PYTHON_VERSION: 3.8.x
+
+jobs:
+  test-infra:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+    - uses: actions/chkecout@v2
+    - uses: actions/setup-python@v3.8
+      with:
