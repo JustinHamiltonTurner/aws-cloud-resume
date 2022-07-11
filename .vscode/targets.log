@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Jul 07 10:36:30 2022
+# Make data base, printed on Mon Jul 11 11:22:33 2022
 
 # Variables
 
@@ -23,8 +23,6 @@ USERPROFILE = C:\Users\justi
 # environment
 LOCALAPPDATA = C:\Users\justi\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-8904caad-c5de-4e5a-aa85-768641ec9e9f-sock
-# environment
 VSCODE_CWD = C:\Users\justi\AppData\Local\Programs\Microsoft VS Code
 # environment
 SYSTEMROOT = C:\Windows
@@ -37,7 +35,7 @@ MAKE_COMMAND := C:/Users/justi/scoop/apps/make/current/bin/make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_13860_TTEVNLDOMZKOSWWA
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_18620_LYHMNQOBVTBCMMIP
 # environment
 FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
@@ -48,12 +46,10 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 %D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
 # automatic
 ^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
-# environment
-VSCODE_LOG_STACK = false
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\justi\AppData\Roaming\Code\CachedData\30d9c6cd9483b2cc586687151bcbcd635f373630
+VSCODE_CODE_CACHE_PATH = C:\Users\justi\AppData\Roaming\Code\CachedData\92d25e35d9bf1a6b16f7d0758f25d48ace11e5b9
 # environment
 LANG = C
 # default
@@ -70,8 +66,6 @@ MAKEFLAGS = pqrR
 ONEDRIVE = C:\Users\justi\OneDrive
 # makefile
 CURDIR := c:/Users/justi/Documents/Visual Studio Code/GitHub repos/aws-cloud-resume-challenge-v2
-# environment
-VSCODE_PIPE_LOGGING = true
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # automatic
@@ -91,9 +85,7 @@ MAKEFILE_LIST :=
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_VERBOSE_LOGGING = true
-# environment
-VSCODE_PID = 13860
+VSCODE_PID = 18620
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -134,8 +126,6 @@ MAKEFILES :=
 PROMPT = $P$G
 # environment
 LOGONSERVER = \\LAPTOP-CO3B41PO
-# environment
-VSCODE_LOG_NATIVE = false
 # environment
 USERNAME = justi
 # environment
@@ -183,7 +173,7 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 TEMP = C:\Users\justi\AppData\Local\Temp
 # environment
-VSCODE_IPC_HOOK = \\.\pipe\112d4a6ba9931c0120db98358a11ffdf-1.68.1-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\112d4a6ba9931c0120db98358a11ffdf-1.69.0-main-sock
 # default
 .RECIPEPREFIX := 
 # automatic
@@ -201,7 +191,7 @@ PROCESSOR_REVISION = 9e0d
 # environment
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 158 Stepping 13, GenuineIntel
 # variable set hash-table stats:
-# Load=94/1024=9%, Rehash=0, Collisions=9/118=8%
+# Load=89/1024=9%, Rehash=0, Collisions=8/113=7%
 
 # Pattern-specific Variable Values
 
@@ -274,6 +264,6 @@ GNUmakefile:
 # strcache performance: lookups = 17 / hit rate = 17%
 # hash-table stats:
 # Load=14/8192=0%, Rehash=0, Collisions=0/17=0%
-# Finished Make data base on Thu Jul 07 10:36:30 2022
+# Finished Make data base on Mon Jul 11 11:22:33 2022
 
  

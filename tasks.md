@@ -56,3 +56,6 @@ aws route53domains accept-domain-transfer-from-another-aws-account --domain-name
 
 ---
 https://www.youtube.com/watch?v=50vzowTPdv0&list=PLEk97Q5Nj5oesA1WNk7DzaUpZUnCsQFVQ&index=16
+
+CICD gihub actions with aws:
+https://www.freecodecamp.org/news/how-to-setup-a-ci-cd-pipeline-with-github-actions-and-aws/

@@ -1,13 +1,18 @@
+
 name: main
 on: push
 env:
-  PYTHON_VERSION: 3.8.x
+  PYTHON_VERSION: 3.8.X
 
 jobs:
   test-infra:
-    runs-on: ubuntu-latest
+    runs-on: ununtu-latest
     timeout-minutes: 2
     steps:
-    - uses: actions/chkecout@v2
-    - uses: actions/setup-python@v3.8
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
       with:
+        python-version: '3.x' # Version range or exact version of a Python version to use, using SemVer's version range syntax
+        architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
+    - name: test-app
+      run: python aws-cloud-resume-challenge-v2\aws-cloud-resume\count\app.py
