@@ -12,9 +12,6 @@ jobs:
       id-token: write
     env:
       AWS_CONFIG_FILE: .github/workflows/aws_config
-    defaults:
-      run:
-        working-directory: ./aws-cloud-resume/count
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-python@v4
@@ -22,7 +19,7 @@ jobs:
         python-version: '3.x' # Version range or exact version of a Python version to use, using SemVer's version range syntax
         architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
     - name: install-boto3
-      run: pip install --upgrade --user boto3
+      run: pip install boto3 requests pyjwt
     - name: test-app
-      run: python3 app.py
+      run: ./aws-cloud-resume/count/python3 app.py
 
