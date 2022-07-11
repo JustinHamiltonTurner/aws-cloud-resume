@@ -1,0 +1,5 @@
+[default]
+role_arn = arn:aws:iam::515709759869:role/github-oidc-test-Role1-Z8L6FUWE1CVR
+web_identity_token_server = GitHub
+role_session_name = DefaultProfile
+region = us-east-2

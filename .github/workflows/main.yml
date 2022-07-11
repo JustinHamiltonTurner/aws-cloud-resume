@@ -8,6 +8,10 @@ jobs:
   test-infra:
     runs-on: ubuntu-latest
     timeout-minutes: 2
+    permissions:
+      id-token: write
+    env:
+      AWS_CONFIG_FILE: .github/workflows/aws_config
     defaults:
       run:
         working-directory: ./aws-cloud-resume/count
@@ -17,7 +21,7 @@ jobs:
       with:
         python-version: '3.x' # Version range or exact version of a Python version to use, using SemVer's version range syntax
         architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
-    - name: install-dependencies
+    - name: install-boto3
       run: pip install --upgrade --user boto3
     - name: test-app
       run: python3 app.py
