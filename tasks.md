@@ -59,3 +59,5 @@ https://www.youtube.com/watch?v=50vzowTPdv0&list=PLEk97Q5Nj5oesA1WNk7DzaUpZUnCsQ
 
 CICD gihub actions with aws:
 https://www.freecodecamp.org/news/how-to-setup-a-ci-cd-pipeline-with-github-actions-and-aws/
+
+na
