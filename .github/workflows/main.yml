@@ -10,7 +10,7 @@ jobs:
     timeout-minutes: 2
     defaults:
       run:
-        working-directory: ./count
+        working-directory: ./aws-cloud-resume/count
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-python@v4
