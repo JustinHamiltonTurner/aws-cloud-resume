@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jul 11 11:22:33 2022
+# Make data base, printed on Tue Jul 12 13:22:02 2022
 
 # Variables
 
@@ -20,6 +20,8 @@ SYSTEMDRIVE = C:
 LC_ALL = C
 # environment
 USERPROFILE = C:\Users\justi
+# environment
+VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
 # environment
 LOCALAPPDATA = C:\Users\justi\AppData\Local
 # environment
@@ -35,7 +37,7 @@ MAKE_COMMAND := C:/Users/justi/scoop/apps/make/current/bin/make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_18620_LYHMNQOBVTBCMMIP
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_16460_UZSCTTKOEKIWIOAS
 # environment
 FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
@@ -85,7 +87,7 @@ MAKEFILE_LIST :=
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 18620
+VSCODE_PID = 16460
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -115,7 +117,7 @@ MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\Calibre2\;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Amazon\AWSSAMCLI\bin\;C:\Users\justi\scoop\shims;C:\Users\justi\AppData\Local\Microsoft\WindowsApps;;C:\Users\justi\AppData\Local\Programs\Microsoft VS Code\bin
+PATH = C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\Calibre2\;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Amazon\AWSSAMCLI\bin\;C:\HashiCorp\Vagrant\bin;C:\Users\justi\scoop\shims;C:\Users\justi\AppData\Local\Microsoft\WindowsApps;;C:\Users\justi\AppData\Local\Programs\Microsoft VS Code\bin
 # environment
 COMPUTERNAME = LAPTOP-CO3B41PO
 # default
@@ -191,7 +193,7 @@ PROCESSOR_REVISION = 9e0d
 # environment
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 158 Stepping 13, GenuineIntel
 # variable set hash-table stats:
-# Load=89/1024=9%, Rehash=0, Collisions=8/113=7%
+# Load=90/1024=9%, Rehash=0, Collisions=8/114=7%
 
 # Pattern-specific Variable Values
 
@@ -264,6 +266,6 @@ GNUmakefile:
 # strcache performance: lookups = 17 / hit rate = 17%
 # hash-table stats:
 # Load=14/8192=0%, Rehash=0, Collisions=0/17=0%
-# Finished Make data base on Mon Jul 11 11:22:33 2022
+# Finished Make data base on Tue Jul 12 13:22:02 2022
 
  

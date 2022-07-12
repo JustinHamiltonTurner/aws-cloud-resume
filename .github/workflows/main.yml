@@ -1,25 +1,27 @@
-
-name: main
-on: push
-env:
-  PYTHON_VERSION: 3.8.X
-
+on:
+  push:
+    branches:
+      - main
 jobs:
   test-infra:
     runs-on: ubuntu-latest
-    timeout-minutes: 2
-    permissions:
-      id-token: write
-    env:
-      AWS_CONFIG_FILE: .github/workflows/aws_config
     steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-python@v4
-      with:
-        python-version: '3.x' # Version range or exact version of a Python version to use, using SemVer's version range syntax
-        architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
-    - name: install-boto3
-      run: pip install boto3 requests pyjwt
-    - name: test-app
-      run: python3 ./aws-cloud-resume/count/app.py
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+      #- uses: aws-actions/setup-sam@v1
+      - uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-2
+      - name: install-boto3
+        run: pip install boto3 requests pyjwt
+      - name: test-app
+        run: python3 ./aws-cloud-resume/count/app.py
+      # sam build 
+      #- run: sam build --use-container
 
+# Run Unit tests- Specify unit tests here 
+
+# sam deploy
+      #- run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name sam-hello-world --s3-bucket ##s3-bucket## --capabilities CAPABILITY_IAM --region ##region## 
