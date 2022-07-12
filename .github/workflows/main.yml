@@ -40,6 +40,8 @@ jobs:
       - uses: jakejarvis/s3-sync-action@master
         with:
           args: --delete
+          AWS-ACCESS-KEY-ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS-SECRET-ACCESS-KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         env:
           AWS_S3_BUCKET: jt0524-fantastic-website
           AWS-ACCESS-KEY-ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
