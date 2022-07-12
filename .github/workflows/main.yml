@@ -14,7 +14,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-2
       - name: install-dependencies
-        run: pip install boto3 requests json pyjwt
+        run: pip install boto3 requests pyjwt
       - name: test-app
         run: python3 ./aws-cloud-resume/count/app.py
   build-and-deploy:
