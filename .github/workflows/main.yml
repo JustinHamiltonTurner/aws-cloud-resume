@@ -34,7 +34,6 @@ jobs:
       - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset
         working-directory: aws-cloud-resume
   site-deploy:
-    needs: build-and-deploy
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
