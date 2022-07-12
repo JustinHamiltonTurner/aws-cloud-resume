@@ -8,20 +8,28 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
-      #- uses: aws-actions/setup-sam@v1
       - uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-2
-      - name: install-boto3
-        run: pip install boto3 requests pyjwt
+      - name: install-dependencies
+        run: pip install boto3 requests json pyjwt
       - name: test-app
         run: python3 ./aws-cloud-resume/count/app.py
-      # sam build 
-      #- run: sam build --use-container
-
-# Run Unit tests- Specify unit tests here 
-
-# sam deploy
-      #- run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name sam-hello-world --s3-bucket ##s3-bucket## --capabilities CAPABILITY_IAM --region ##region## 
+  build-and-deploy:
+    needs: test-infra
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+      - uses: aws-actions/setup-sam@v1
+      - uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-2
+      - run: sam build
+        working-directory: aws-cloud-resume
+      - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset
+        working-directory: aws-cloud-resume
