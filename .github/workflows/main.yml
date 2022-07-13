@@ -40,7 +40,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
       - name: install-dependencies
-        run: pip3 install unittest requests pyjwt
+        run: pip3 install requests pyjwt
       - name: test_backend.py
         run: python3 ./aws-cloud-resume/tests/test_backend.py
   test-frontend:
