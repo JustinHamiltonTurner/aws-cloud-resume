@@ -33,6 +33,28 @@ jobs:
         working-directory: aws-cloud-resume
       - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset
         working-directory: aws-cloud-resume
+  test-backend:
+    needs: test-infra
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+      - name: install-dependencies
+        run: pip3 install unittest requests pyjwt
+      - name: test_backend.py
+        run: python3 ./aws-cloud-resume/tests/test_backend.py
+  test-frontend:
+    needs: test-backend
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '12.x'
+      - name: install-dependencies
+        run: npm install puppeteer
+      - name: test-frontend.js
+        run: node ./aws-cloud-resume/tests/test_frontend.js
   site-deploy:
     runs-on: ubuntu-latest
     steps:
