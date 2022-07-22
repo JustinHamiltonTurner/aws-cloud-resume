@@ -1,160 +1,133 @@
-/* global */
-
+/* Global */
 * {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Roboto;  
-}
-
-h2 {
-  font-style: italic;
-  font-weight: normal;
-  font-size: 30px;
-}
-
-.resume {
-  width: 70%;
-  background-color: #FAF9F6;
-  border: black;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3%;
-  margin-bottom: 3%;
-  padding: 20px;
-  border:1px solid black;
-}
-
-/* Top banner */
-header {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -2%;
-  margin-bottom: -3%;
-  padding: 3%;
-}
-
-.name-title {
-  display: inline-block;
-  text-align: left;
-  width: 79%;
-  margin-top: -10%;
-}
-
-.name-title h1 {
-  font-size: 60px;
-  font-weight: normal;
-}
-
-.name-title p {
-  margin-top: -40px;
-  font-size: 25px;
-  font-style: italic;
-}
-
-.contact-info {
-  display: inline-block;
-  text-align: left;
-  width: 20%;
-}
-
-.contact-info p {
-  margin-top: 1px;
-  margin-bottom: 1px;
-}
-
-/* sections */
-
-.certifications, .technical, .employment-history, .projects {
-  padding: 3.5%;
-  margin-top: -3%;
-  margin-bottom: -2%;
-}
-
-/* Certifications */
-
-.badge-box {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 0 4px;
-}
-
-.badge {
-  min-width: 25%;
-  min-height: 50px;
-  object-fit: cover;
-  margin-top: 8px;
-  padding: 0 4px;
-}
-
-.jobs {
-  padding-left: 2.5%;
-}
-
-.job-title {
-  padding-left: 2%;
-}
-
-/* Technical Skills */
-.tech-list ul {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.tech-list ul li {
-  width: 33.33%;
-}
-
-/* projects */
-.proj {
-  padding-left: 2.5%;
-}
-
-/* footer */
-footer {
-  text-align: center;
-}
-
-/* Smaller screens */
-@media only screen and (max-width: 800px) {
-  /* Global */
+    box-sizing: border-box;
+    display: box;
+  }
+  
+  .download {
+    float: right;
+    padding: 5px;
+  }
+  
+  body {
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: rgb(242, 247, 252);
+    font-feature-settings: "case", "rlig", "calt", "kern";
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+    font-variant-ligatures: contextual common-ligatures;
+    font-kerning: normal;
+  }
+  
   .resume {
-    width: 100%;
-    background-color: #FAF9F6;
-    border: black;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    margin-top: 25px;
+    margin-bottom: 25px;
     padding: 20px;
-    border:1px solid black;
   }
   
-  /* Top banner */
-  .contact-info {
-    display: inline;
-    text-align: left;
-    width: 20%;
-  }
-  .name-title h1 {
-    font-size: 40px;
-    font-weight: normal;
-  }
-  .name-title p {
-    margin-top: -20px;
-    font-size: 20px;
-    font-style: italic;
+  a, a:focus, a:active {
+        text-decoration: none;
+        color: #707678;
+   }
+  
+  a:hover {
+    color: #107678;
   }
   
-  /* Technical Skills */
-  .tech-list {
-    margin-left: 20px;
+  h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+    font-family: "IBM Plex Mono", monospace;
+    color: #323336;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    margin-bottom: 12px;
   }
-  .tech-list ul {
-    display: inline;
+  
+  h2 {
+    margin: 0;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    color: #323336;
+    font-size: 12px;
+    margin-bottom: 8px;
   }
-}
+  
+  .contact {
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    font-family: "IBM Plex Mono", monospace;
+    color: #c1c5c7;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1.2px;
+    margin-bottom: 5px;
+  }
+  
+  h4 {
+    font-family: "IBM Plex Mono", monospace;
+    color: #323336;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 0.07em;
+    margin-top: 7px;
+    margin-bottom: 5px;
+  }
+  
+  h5 {
+    margin: 0;
+    min-width: 0;
+    color: #707678;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 4px;
+    font-family: "IBM Plex Mono", monospace;
+  }
+  
+  h6 {
+    margin: 0;
+    font-family: "IBM Plex Mono",monospace;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.07em;
+  }
+  
+  p, ul {
+    margin: 0;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    color: #707678;
+    font-size: 14px;
+  }
+  
+footer p {
+      text-align: center;
+    }
+  
+  /* Smaller screens */
+  @media only screen and (max-width: 800px) {
+    /* Global */
+    .resume {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 20px;
+    }
+    ul {
+      margin-left: -15px;
+    }
+    
+   
