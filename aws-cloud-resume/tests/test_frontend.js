@@ -9,7 +9,8 @@ const puppeteer = require('puppeteer');
     let browser = await puppeteer.launch();
     let page = await browser.newPage();
 
-    await page.goto(url), { await page.waitFor(3000) };
+    await page.goto(url);
+    await page.waitFor(3000);
 
     let data = await page.evaluate(() => {
 
