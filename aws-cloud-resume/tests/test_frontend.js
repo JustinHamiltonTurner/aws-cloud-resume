@@ -10,7 +10,6 @@ const puppeteer = require('puppeteer');
     let page = await browser.newPage();
 
     await page.goto(url);
-    await page.waitFor(3000);
 
     let data = await page.evaluate(() => {
 
