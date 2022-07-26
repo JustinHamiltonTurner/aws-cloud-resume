@@ -1,4 +1,4 @@
-// Scrapes the site to make sure the footer element is loading and returning a visitor count
+// Scrapes the site to make sure the span element is loading and returning a visitor count
 
 const puppeteer = require('puppeteer');
 
@@ -9,13 +9,13 @@ const puppeteer = require('puppeteer');
     let browser = await puppeteer.launch();
     let page = await browser.newPage();
 
-    await page.goto(url), { waitUntil: 'networkidle2' };
-    console.log('Waiting on API calls to finish')
+    await page.goto(url);
+    await page.waitForTimeout(3000);
     
     let data = await page.evaluate(() => {
 
         let counter = document.querySelector('span').innerText;
-    
+        console.log(counter)
         return {
             counter
         }
