@@ -9,8 +9,9 @@ const puppeteer = require('puppeteer');
     let browser = await puppeteer.launch();
     let page = await browser.newPage();
 
-    await page.goto(url), { waitUntil: 'networkidle2' };;
-
+    await page.goto(url), { waitUntil: 'networkidle2' };
+    console.log('Waiting on API calls to finish')
+    
     let data = await page.evaluate(() => {
 
         let counter = document.querySelector('span').innerText;
