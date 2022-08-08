@@ -2,4 +2,4 @@ JhtResume.com was built from the ground up utilizing only AWS Cloud services and
 
 Tech stack: DynamoDB, API Gateway, Route53, CloudFront, CloudFormation, Lambda, SAM, GIT, GitHub, GitHub Actions, MAKE, Python, JavaScript, NodeJS, Puppeteer, HTML/CSS, YAML, and Bash.
 
-![diagram](https://github.com/JustinHamiltonTurner/Image-Hosting/blob/master/AWS%20Cloud%20Resume.jpeg?raw=true)
+![diagram](https://github.com/JustinHamiltonTurner/Image-Hosting/blob/master/jhtresume_diagram.png?raw=true)
